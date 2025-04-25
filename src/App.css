@@ -1,0 +1,19 @@
+body {
+    background-image: url(../public/img/background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.container {
+    margin-top: 10px;
+}
+
+/* mobile style */
+@media (max-width: 768px) {
+    body {
+        background-image: url(../public/img/background-mobile.png);
+    }
+}

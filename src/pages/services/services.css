@@ -1,0 +1,121 @@
+.services__container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    /* height: 100svh; */
+
+    padding: 40px;
+}
+
+.services__video,
+.cards__container {
+    margin-bottom: 60px;
+}
+
+.cards__container {
+    height: 25rem;
+}
+
+.services__video {
+    width: 22rem;
+}
+
+.services__container .services__card {
+    width: 50svh;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    padding: 4rem;
+    overflow: hidden;
+    transition: height 0.4s ease;
+
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+.services__card.expanded {
+    height: 100% !important;
+}
+
+.services__container .services__card .services__card__title {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+}
+
+.services__container .services__card .services__card__detail {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    color: #fff;
+    direction: rtl;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.services__container .services__card .services__card__button button {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    border-radius: 16px;
+    border: none;
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 1rem;
+}
+
+.services__container .services__card .services__card__button button:hover {
+    background: #4facf7;
+    transition: background 0.2s ease;
+}
+
+@media screen and (max-width: 480px) {
+    .services__container {
+        display: flex;
+        align-items: normal;
+        flex-direction: column;
+        padding: 0 40px;
+        height: 100svh;
+    }
+
+    .services__card.expanded {
+        height: 80svh !important;
+    }
+
+    .services__card__button {
+        display: none;
+    }
+
+    .services__card {
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center !important;
+    }
+
+    .services__video {
+        display: none;
+    }
+
+    .hidden {
+        display: flex !important;
+    }
+}

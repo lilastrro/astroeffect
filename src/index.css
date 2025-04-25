@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'IranSans';
+    src: url(../public/font/FontsFree-Net-ir_sans.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: "IranSans", sans-serif;
+}

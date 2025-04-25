@@ -1,0 +1,151 @@
+.delay-one {
+    animation-delay: 400ms;
+}
+
+.delay-two {
+    animation-delay: 800ms;
+}
+
+.about {
+    color: #fff;
+    padding: 25px;
+    direction: rtl;
+    margin: auto;
+    inset: 0;
+    position: absolute;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10rem;
+}
+
+.email__container,
+.phone__container,
+.social__container {
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+
+    width: 15%;
+    height: 60svh;
+    text-align: center;
+    padding: 2rem;
+}
+
+.social__container ul {
+    list-style: none;
+    padding: 0;
+}
+
+.social__container ul li {
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social__container ul li a {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    border-radius: 15px;
+    display: flex;
+}
+
+.social__container ul li a:hover {
+    background: #4facf7;
+    transition: background 0.2s ease;
+}
+
+.social-icon {
+    font-size: 2rem;
+    color: #fff;
+}
+
+.social-icon:hover {
+    color: #f0f0f0;
+    transition: 0.3s;
+}
+
+.phone__container,
+.email__container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.phone-button,
+.email-button {
+    border: none;
+    background: none;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+.phone-button a,
+.email-button a {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    gap: 10px;
+
+    color: #fff;
+    text-decoration: underline;
+}
+
+@media screen and (max-width : 480px) {
+    .about {
+        flex-direction: column;
+        justify-content: normal;
+        gap: 2rem;
+        overflow-y: scroll !important;
+        padding: 10px;
+    }
+
+    .email__container,
+    .phone__container,
+    .social__container {
+        width: 80%;
+        height: 25svh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .email__container h1,
+    .phone__container h1,
+    .social__container h1 {
+        font-size: 1.5rem;
+    }
+
+    .email-button a,
+    .phone-button a {
+        font-size: 1.4rem;
+    }
+
+    .social__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .social__container ul {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        gap: 0.5rem;
+    }
+
+    .social-icon {
+        font-size: 1.5rem;
+    }
+
+    .email__container>div>p,
+    .phone__container>div>p {
+        display: none;
+    }
+}
