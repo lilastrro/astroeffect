@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "/astroeffect/static/css/main.9296dfba.css",
-    "main.js": "/astroeffect/static/js/main.aac46e80.js",
+    "main.js": "/astroeffect/static/js/main.ef882049.js",
     "static/media/FontsFree-Net-ir_sans.ttf": "/astroeffect/static/media/FontsFree-Net-ir_sans.b405362106aecf6bb79b.ttf",
     "static/media/background-mobile.png": "/astroeffect/static/media/background-mobile.413a6d919268d753c09a.png",
     "static/media/background.png": "/astroeffect/static/media/background.635004a5385636b31af9.png",
     "index.html": "/astroeffect/index.html",
     "main.9296dfba.css.map": "/astroeffect/static/css/main.9296dfba.css.map",
-    "main.aac46e80.js.map": "/astroeffect/static/js/main.aac46e80.js.map"
+    "main.ef882049.js.map": "/astroeffect/static/js/main.ef882049.js.map"
   },
   "entrypoints": [
     "static/css/main.9296dfba.css",
-    "static/js/main.aac46e80.js"
+    "static/js/main.ef882049.js"
   ]
 }
